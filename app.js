@@ -20,7 +20,7 @@ app.use(cookieparser());
 app.use(require('./router/auth'));
 const User=require('./model/userSchema');
 
-const PORT=process.env.PORT;
+const PORT=process.env.PORT || 3030;
 
 const middleware=(req,res,next)=>{
            console.log('hello my middleware');
