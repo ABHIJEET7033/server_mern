@@ -37,10 +37,7 @@ cpassword:{
     type:String,
     required:true
 },
-date:{
-    type:Date,
-    default:Date.now
-},
+
 messages:[
     {
         name:{
@@ -70,7 +67,12 @@ messages:[
 
             }
         }
-    ]
+    ],
+
+    date:{
+        type:Date,
+        default:Date.now
+    },
     
 })
 
