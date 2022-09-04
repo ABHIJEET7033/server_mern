@@ -58,6 +58,11 @@ messages:[
         }
     }
 ],
+date:{
+    type:Date,
+    default:Date.now
+},
+
     tokens:[
         {
             token:{
@@ -69,10 +74,7 @@ messages:[
         }
     ],
 
-    date:{
-        type:Date,
-        default:Date.now
-    },
+    
     
 })
 
