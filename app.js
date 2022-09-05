@@ -6,7 +6,7 @@ const cors=require('cors');
 const cookieparser=require('cookie-parser');
 
 var corsOptions = {
-    origin: 'https://magnificent-gecko-c40889.netlify.app',
+    origin: 'https://mernbyabhi.netlify.app',
     optionsSuccessStatus: 200,
     credentials:true,
     'Access-Control-Allow-Origin':'*',
