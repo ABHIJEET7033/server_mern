@@ -6,15 +6,16 @@ const cors=require('cors');
 const cookieparser=require('cookie-parser');
 
 var corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://magnificent-gecko-c40889.netlify.app',
     optionsSuccessStatus: 200,
-    credentials:true
+    credentials:true,
+    'Access-Control-Allow-Origin':'*',
+    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
 }
 
 app.use(cors(corsOptions));
 require('./db/conn');
 dotenv.config();
-//app.use(cors("http://localhost:3000"));
 app.use(express.json());
 app.use(cookieparser());
 app.use(require('./router/auth'));
