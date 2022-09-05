@@ -9,8 +9,6 @@ var corsOptions = {
     origin: 'https://mernbyabhi.netlify.app',
     optionsSuccessStatus: 200,
     credentials:true,
-    'Access-Control-Allow-Origin':'*',
-    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS'
 }
 
 app.use(cors(corsOptions));
